@@ -265,7 +265,7 @@ POSITION_LIB_INLINE_NO_DISABLE position_display_string format(const T& p, const 
     return ps;
 }
 
-#ifndef APRS_LIB_PUBLIC_FORWARD_DECLARATIONS_ONLY
+#ifndef POSITION_LIB_PUBLIC_FORWARD_DECLARATIONS_ONLY
 
 POSITION_LIB_INLINE position_dd::position_dd(double lat, double lon)
 {
