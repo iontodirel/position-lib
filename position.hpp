@@ -1,4 +1,4 @@
-﻿// **************************************************************** //
+// **************************************************************** //
 // position-lib - Position conversion and display utilities         // 
 // Version 0.1.0                                                    //
 // https://github.com/iontodirel/position-lib                       //
@@ -143,6 +143,7 @@ struct position_format
 
 POSITION_LIB_INLINE_NO_DISABLE position_format position_dd_format {.deg_symbol = "", .dir_indicator = false };
 POSITION_LIB_INLINE_NO_DISABLE position_format position_ddm_format {.dir_indicator_spacer = "", .dm_separator = "", .min_precision = 3 };
+POSITION_LIB_INLINE_NO_DISABLE position_format position_ddm_short_format {.deg_symbol = "", .min_symbol = "", .sec_symbol = "", .dir_indicator_spacer = "", .dm_separator = "", .min_precision = 2 };
 POSITION_LIB_INLINE_NO_DISABLE position_format position_dms_format {.dir_indicator_spacer = "", .dm_separator = "", .sec_precision = 2 };
 
 struct position_display_string

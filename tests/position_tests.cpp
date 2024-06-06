@@ -1,4 +1,4 @@
-﻿#include <gtest/gtest.h>
+#include <gtest/gtest.h>
 
 #include "../position.hpp"
 
@@ -115,6 +115,10 @@ TEST(Position, FormattingEiffelTower)
     position_display_string ddm_fmt = format(ddm, position_ddm_format);
     EXPECT_TRUE(ddm_fmt.lat == "48°51.513'N");
     EXPECT_TRUE(ddm_fmt.lon == "2°17.669'E");
+
+    position_display_string ddm_short_fmt = format(ddm, position_ddm_short_format);
+    EXPECT_TRUE(ddm_short_fmt.lat == "4851.51N");
+    EXPECT_TRUE(ddm_short_fmt.lon == "217.67E");
 
     position_display_string dms_fmt = format(dms, position_dms_format);
     EXPECT_TRUE(dms_fmt.lat == "48°51'30.79\"N");
